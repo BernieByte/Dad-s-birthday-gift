@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dad's Bible Mastery Challenge</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Hidden YouTube Music -->
+
+<iframe
+id="bg-music"
+width="0"
+height="0"
+src=""
+allow="autoplay">
+</iframe>
+
+<canvas id="confetti"></canvas>
+
+<!-- Welcome Screen -->
+
+<section id="welcome-screen">
+
+<img src="/dad.jpg" class="hero-image">
+
+<h1 class="glow-title">
+Happy Birthday Dad 🎉
+</h1>
+
+<p class="subtitle">
+The Biblical Mastery Challenge
+</p>
+
+<button id="start-btn" class="home-btn">
+Start Quiz
+</button>
+
+</section>
+
+<!-- Stage Selection -->
+
+<section id="stage-selection" class="hidden">
+
+<h2>Select Knowledge Stage</h2>
+
+<button class="stage-btn neon-blue" data-stage="illuminated">
+Illuminated Stage
+</button>
+
+<button class="stage-btn neon-purple" data-stage="enlightened">
+Enlightened Stage
+</button>
+
+<br>
+
+<button id="back-home" class="home-btn">
+Home
+</button>
+
+</section>
+
+<!-- Quiz Screen -->
+
+<section id="quiz-screen" class="hidden">
+
+<div id="progress-bar">
+<div id="progress-fill"></div>
+</div>
+
+<h2 id="question-text"></h2>
+
+<div id="options-container"></div>
+
+<input
+type="text"
+id="typed-answer"
+class="hidden"
+placeholder="Type your answer">
+
+<button id="submit-answer" class="submit-btn hidden">
+Submit
+</button>
+
+<br>
+
+<button id="quiz-home" class="home-btn">
+Home
+</button>
+
+</section>
+
+<!-- Results Screen -->
+
+<section id="results-screen" class="hidden">
+
+<h2>
+Score: <span id="score"></span>/20
+</h2>
+
+<p id="birthday-message"></p>
+
+<button id="restart-btn" class="restart-btn">
+Play Again
+</button>
+
+<button id="results-home" class="home-btn">
+Home
+</button>
+
+</section>
+
+<script src="script.js"></script>
+
+<script src="confetti.js"></script>
+
+</body>
+</html>
